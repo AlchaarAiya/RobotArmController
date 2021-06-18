@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Robot Control Panel</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+
+    <body>
+        <div id="wrapper">
+        
+        <h1>Robot Arm Control Panel</h1>
+
+        <form name="saveForm" action="motorInsert.php" method="POST">
+            <label>Motor 1</label>
+            <input class="slider" type="range" min="0" max="180" step="1" name="m1" value="90" oninput="this.form.n1.value=this.value"/> 
+            <input class="num" type="number" name="n1" min="0" max="180" value="90" oninput="this.form.m1.value=this.value"/>            
+            <br>
+            
+            <label>Motor 2</label>
+            <input class="slider" type="range" min="0" max="180" step="1" name="m2" value="90" oninput="this.form.n2.value=this.value"/> 
+            <input class="num" type="number" name="n2" min="0" max="180" value="90" oninput="this.form.m2.value=this.value"/>            
+            <br>
+            
+            <label>Motor 3</label>
+            <input class="slider" type="range" min="0" max="180" step="1" name="m3" value="90" oninput="this.form.n3.value=this.value"/> 
+            <input class="num" type="number" name="n3" min="0" max="180" value="90" oninput="this.form.m3.value=this.value"/>            
+            <br>
+
+            <label>Motor 4</label>
+            <input class="slider" type="range" min="0" max="180" step="1" name="m4" value="90" oninput="this.form.n4.value=this.value"/> 
+            <input class="num" type="number" name="n4" min="0" max="180" value="90" oninput="this.form.m4.value=this.value"/>            
+            <br>
+
+            <label>Motor 5</label>
+            <input class="slider" type="range" min="0" max="180" step="1" name="m5" value="90" oninput="this.form.n5.value=this.value"/> 
+            <input class="num" type="number" name="n5" min="0" max="180" value="90" oninput="this.form.m5.value=this.value"/>            
+            <br>
+
+            <label>Motor 6</label>
+            <input class="slider" type="range" min="0" max="180" step="1" name="m6" value="90" oninput="this.form.n6.value=this.value"/> 
+            <input class="num" type="number" name="n6" min="0" max="180" value="90" oninput="this.form.m6.value=this.value"/>            
+            <br><br>
+
+            <input class="btn" type="submit" name="save" value="Save" />
+
+            
+            <input class="btn" type="submit" name="ON" value="ON" style="width:60px" />
+            <input class="btn" type="submit" name="OFF" value="OFF" style="width:60px"/>
+        </form>
+     
+    </div>
+    </body>
+</html>
